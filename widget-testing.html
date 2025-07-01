@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA</title>
+    <!-- Document360 knowledge base widget start -->
+    <!-- Document360 knowledge base widget start -->
+    <script>
+      (function (w,d,s,o,f,js,fjs) {
+          w['JS-Widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+          js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+          js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+      }(window, document, 'script', 'mw', 'https://cdn.document360.info/static-qa/js/widget.js'));
+      mw('init', { apiKey: 'M1XbCrQnV47mHjZcYnpsUH59sWRJMFkTzfZCpiDkJY2OLGfgwKzwgxzAdOsoHVRKkB4oWhqsvDbBbOGa4ge/8nuSEXalwzZ8h25WWppJz5pCcxG3LEw+2Qm3fRcxp7UmTgPyfXqPeHSHrv9IzYM86g==' });
+  </script>
+<!-- Document360 knowledge base widget end -->
+<!-- Document360 knowledge base widget end -->
+    <!-- Document360 knowledge base widget end -->
+  </head>
+  <body>
+    <div
+      class="react-transform-component transform-component-module_content__FBWxo"
+      style="transform: translate(0px, 0px) scale(1)"
+    >
+      <div
+        id="artifacts-component-root-svg"
+        class="h-full w-full [&amp;>svg]:h-full [&amp;>svg]:w-full"
+      >
+        <svg viewBox="0 0 1000 1100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background styling -->
+          <defs>
+            <marker
+              id="arrowhead"
+              markerWidth="10"
+              markerHeight="7"
+              refX="10"
+              refY="3.5"
+              orient="auto"
+            >
+              <polygon points="0 0, 10 3.5, 0 7" fill="#333"></polygon>
+            </marker>
+            <linearGradient
+              id="headerGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="0%"
+            >
+              <stop
+                offset="0%"
+                style="stop-color: #4a6fa5; stop-opacity: 1"
+              ></stop>
+              <stop
+                offset="100%"
+                style="stop-color: #334e7a; stop-opacity: 1"
+              ></stop>
+            </linearGradient>
+          </defs>
+
+          <!-- Title -->
+          <rect
+            x="250"
+            y="20"
+            width="500"
+            height="50"
+            rx="5"
+            ry="5"
+            fill="url(#headerGradient)"
+          ></rect>
+          <text
+            x="500"
+            y="55"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="22"
+            fill="white"
+            font-weight="bold"
+          >
+            AI Add-On Workflow Management
+          </text>
+
+          <!-- Legend -->
+          <rect
+            x="750"
+            y="100"
+            width="200"
+            height="130"
+            rx="5"
+            ry="5"
+            fill="#f5f5f5"
+            stroke="#ccc"
+          ></rect>
+          <text
+            x="850"
+            y="125"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+            font-weight="bold"
+          >
+            Legend
+          </text>
+
+          <rect
+            x="770"
+            y="140"
+            width="25"
+            height="15"
+            rx="2"
+            ry="2"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+          ></rect>
+          <text x="805" y="152" font-family="Arial" font-size="14" fill="#333">
+            State
+          </text>
+
+          <rect
+            x="770"
+            y="165"
+            width="25"
+            height="15"
+            rx="2"
+            ry="2"
+            fill="#fff2e8"
+            stroke="#ffbb96"
+          ></rect>
+          <text x="820" y="177" font-family="Arial" font-size="14" fill="#333">
+            User Action
+          </text>
+
+          <rect
+            x="770"
+            y="190"
+            width="25"
+            height="15"
+            rx="2"
+            ry="2"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+          ></rect>
+          <text x="845" y="202" font-family="Arial" font-size="14" fill="#333">
+            Service Bus Message
+          </text>
+
+          <!-- Main Workflow -->
+
+          <!-- Start state -->
+          <rect
+            x="400"
+            y="100"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="135"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            AI Add-On Not Active
+          </text>
+
+          <!-- Try Now action -->
+          <rect
+            x="400"
+            y="200"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#fff2e8"
+            stroke="#ffbb96"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="235"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            User Clicks "Try Now"
+          </text>
+
+          <!-- Trial active state -->
+          <rect
+            x="400"
+            y="300"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="335"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            AI Add-On Trial Active
+          </text>
+
+          <!-- Service Bus activation -->
+          <rect
+            x="650"
+            y="300"
+            width="250"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="775"
+            y="330"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Schedule via Service Bus:
+          </text>
+          <text
+            x="775"
+            y="350"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            1. Trial Expiration (7/14 days)
+          </text>
+
+          <!-- Admin extend trial -->
+          <rect
+            x="100"
+            y="300"
+            width="250"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#fff2e8"
+            stroke="#ffbb96"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="225"
+            y="330"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Admin Extends Trial
+          </text>
+          <text
+            x="225"
+            y="350"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            (via Admin Portal)
+          </text>
+
+          <!-- Reset scheduled messages -->
+          <rect
+            x="100"
+            y="400"
+            width="250"
+            height="70"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="225"
+            y="430"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            1. Cancel scheduled messages
+          </text>
+          <text
+            x="225"
+            y="455"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            2. Schedule new expiration date
+          </text>
+
+          <!-- Trial expired event -->
+          <rect
+            x="400"
+            y="400"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="427"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Service Bus Trigger:
+          </text>
+          <text
+            x="500"
+            y="447"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            AddonTrialExpired
+          </text>
+
+          <!-- Trial disabled state -->
+          <rect
+            x="400"
+            y="500"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="535"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            AI Add-On Disabled
+          </text>
+
+          <!-- Trial disabled processing -->
+          <rect
+            x="650"
+            y="500"
+            width="250"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="775"
+            y="530"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Schedule via Service Bus:
+          </text>
+          <text
+            x="775"
+            y="550"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            Eligibility Reset (90 days)
+          </text>
+
+          <!-- Purchase add-on -->
+          <rect
+            x="100"
+            y="500"
+            width="250"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#fff2e8"
+            stroke="#ffbb96"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="225"
+            y="530"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            User Purchases Add-On
+          </text>
+          <text
+            x="225"
+            y="550"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            (Only available on paid KB plan)
+          </text>
+
+          <!-- Purchase processing -->
+          <rect
+            x="100"
+            y="600"
+            width="250"
+            height="70"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="225"
+            y="630"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            1. Cancel all pending messages
+          </text>
+          <text
+            x="225"
+            y="655"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            2. Mark subscription as paid
+          </text>
+
+          <!-- Eligibility reset trigger -->
+          <rect
+            x="400"
+            y="600"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="627"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Service Bus Trigger:
+          </text>
+          <text
+            x="500"
+            y="647"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            AddonTrialEligibilityReset
+          </text>
+
+          <!-- Add-on active state -->
+          <rect
+            x="100"
+            y="710"
+            width="250"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="225"
+            y="745"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            AI Add-On Active (Paid)
+          </text>
+
+          <!-- Eligibility reset state -->
+          <rect
+            x="400"
+            y="710"
+            width="200"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="500"
+            y="745"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            "Try Now" Available Again
+          </text>
+
+          <!-- Project Events section -->
+          <rect
+            x="250"
+            y="820"
+            width="500"
+            height="50"
+            rx="5"
+            ry="5"
+            fill="#f0f0f0"
+            stroke="#ccc"
+          ></rect>
+          <text
+            x="500"
+            y="855"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="18"
+            fill="#333"
+            font-weight="bold"
+          >
+            Project Status Change Events
+          </text>
+
+          <!-- Project trial expired -->
+          <rect
+            x="150"
+            y="900"
+            width="300"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="300"
+            y="930"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Project Trial Expires
+          </text>
+          <text
+            x="300"
+            y="950"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            (AI Add-On trial also disabled)
+          </text>
+
+          <!-- Project converts to paid -->
+          <rect
+            x="550"
+            y="900"
+            width="300"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#f6ffed"
+            stroke="#b7eb8f"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="700"
+            y="930"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Project Converts to Paid
+          </text>
+          <text
+            x="700"
+            y="950"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="14"
+            fill="#333"
+          >
+            (7-day AI trial becomes available)
+          </text>
+
+          <!-- Project paid state -->
+          <rect
+            x="550"
+            y="1000"
+            width="300"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="700"
+            y="1035"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Project on Paid Plan
+          </text>
+
+          <!-- Project expired state -->
+          <rect
+            x="150"
+            y="1000"
+            width="300"
+            height="60"
+            rx="5"
+            ry="5"
+            fill="#e6f7ff"
+            stroke="#91d5ff"
+            stroke-width="2"
+          ></rect>
+          <text
+            x="300"
+            y="1035"
+            text-anchor="middle"
+            font-family="Arial"
+            font-size="16"
+            fill="#333"
+          >
+            Project &amp; Add-On Disabled
+          </text>
+
+          <!-- Arrows -->
+          <!-- Main flow path -->
+          <line
+            x1="500"
+            y1="160"
+            x2="500"
+            y2="200"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="500"
+            y1="260"
+            x2="500"
+            y2="300"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="500"
+            y1="360"
+            x2="500"
+            y2="400"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="500"
+            y1="460"
+            x2="500"
+            y2="500"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="500"
+            y1="560"
+            x2="500"
+            y2="600"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="500"
+            y1="660"
+            x2="500"
+            y2="710"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+
+          <!-- Trial activation scheduling -->
+          <line
+            x1="600"
+            y1="330"
+            x2="650"
+            y2="330"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+
+          <!-- Trial disabled scheduling -->
+          <line
+            x1="600"
+            y1="530"
+            x2="650"
+            y2="530"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+
+          <!-- Admin extension flow -->
+          <line
+            x1="350"
+            y1="330"
+            x2="400"
+            y2="330"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="225"
+            y1="360"
+            x2="225"
+            y2="400"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="225"
+            y1="470"
+            x2="225"
+            y2="500"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+
+          <!-- Purchase flow -->
+          <line
+            x1="225"
+            y1="560"
+            x2="225"
+            y2="600"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="225"
+            y1="670"
+            x2="225"
+            y2="710"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+
+          <!-- Project events -->
+          <line
+            x1="300"
+            y1="960"
+            x2="300"
+            y2="1000"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+          <line
+            x1="700"
+            y1="960"
+            x2="700"
+            y2="1000"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+
+          <!-- Try again flow -->
+          <path
+            d="M 400 745 C 350 745, 350 135, 400 135"
+            stroke="#333"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+            marker-end="url(#arrowhead)"
+            fill="transparent"
+          ></path>
+
+          <!-- Purchase from disabled state -->
+          <line
+            x1="400"
+            y1="530"
+            x2="350"
+            y2="530"
+            stroke="#333"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          ></line>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <button onclick="location.href = location.pathname + '#cmts';">
+        Go to Section
+      </button>
+    </div>
+  </body>
+</html>
